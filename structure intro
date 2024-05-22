@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+struct student{
+  int a;
+  int roll;
+  char c;
+  char name[100];
+    
+};
+int main (){
+    struct student *p1;
+    struct student *p2;
+    
+    p1 = (struct student*)malloc(sizeof(struct student));
+    p1->a=12;
+    p1->roll=44;
+    p1->c='a';
+    
+    
+    printf("The valves of a ,roll ,c ,name is %d\t,%d\t,%c\n",p1->a,p1->roll,p1->c);
+    p2=(struct student*)malloc(sizeof(struct student));
+    p2->a=15;
+    p2->roll=40;
+    p2->c='c';
+      printf("The valves of a ,roll ,c ,name is %d\t,%d\t,%c\t",p2->a,p2->roll,p2->c);
+    return 0;
+}
