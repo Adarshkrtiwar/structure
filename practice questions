@@ -1,0 +1,40 @@
+// pattern problems
+#include<stdio.h>
+int sumofdigit(int a);
+int main(){
+    int a;
+    
+    printf("Enter a number   :");
+    scanf("%d",&a);
+    
+    for(int i = 0;i<n;i++){
+        for(int j = 0;j<n;j++){
+            printf("*");
+        }
+        printf("\n");
+    }
+    for(int i = 2;i<n;i++){
+        if(n%i==0){
+            printf("IT is not a prime number\n ");
+            
+        }
+        printf("It is a prime number \n");
+    }
+    sumofdigit(a);
+    printf("The sum of digits  is %d :",sumofdigit(a));
+    
+    return 0;
+}
+int sum(int a,int b){
+    return a+b;
+}
+
+int sumofdigit(int a){
+    int sum=0;
+   while(a!=0){ 
+     int digit=a%10;
+    sum=digit+sum;
+    a=a/10;
+   }
+    printf("sum is %d",sum);
+}
