@@ -1,0 +1,57 @@
+#include<stdio.h>
+#include<math.h>
+int main (){
+    int l,b,h;
+    printf("Enter three number  : ");
+    scanf("%d %d %d",&l,&b,&h);
+    printf("Avarage of three number  iis  : %d",(l+b+h)/3);
+    return 0;
+    char ch;
+    printf("Enter a character :");
+    scanf("%c",&ch);
+    if(ch>='0'&&ch<='9'){
+        printf("it is digits");
+    }else if(ch>='a'&&ch<='z'){
+        printf("it is a lower case character ");
+    }
+    else if(ch>='A'&&ch<='Z'){
+        printf("it is a upper case character ");
+    }
+    else {
+        printf("it is a special  character ");
+    }
+    int a,b;
+    printf("Enter two Digits : ");
+    scanf("%d %d",&a,&b);
+    if(a>b){
+        printf("fiest one is bigger ");
+    }else{
+        printf("Second one is bigger ");
+    }
+    int n ;
+    printf("Enter a number :");
+    scanf("%d",&n);
+    int count = log10(n)+1;
+    printf("\n%d",count);
+    int a =  n;
+    int  sum=0;
+    while(n!=0){
+        int digit=n%10;
+        sum=pow(digit,count)+sum;
+        n=n/10;
+    }
+    if(a==sum){
+        printf("\nIt is a armstrong number ");
+    }
+    else{
+        printf("\nIt is a not armstrong number ");
+    }
+    if(n>1){
+        printf("Number is a natural number ");
+    }else{
+        printf("Number is  NOT a natural number ");
+    }
+    
+    
+    return 0;
+}
