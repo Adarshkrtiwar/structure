@@ -1,0 +1,148 @@
+#include<stdio.h>
+#include<math.h>
+#include<string.h>
+void display();
+int main(){
+  
+        int a = log10(123)+1;
+    
+        printf("%d",a);
+        printf("\n%d",sizeof(short));
+    
+     if(printf("\nAdarsh")){
+     
+     
+     int a= 0,b=0;
+     printf("Enter a number :");
+     scanf("%d%d",&a,&b);
+     printf("a is %d and b is %d",b,a);
+    
+     int a = 10 + 010 + 0xAC;
+     printf("a is %o\n",a);
+     if(printf("m\t"))
+        printf("Hello ");
+        printf("Adarsh"); 
+        
+      
+      if(' '){
+          printf("we are in if statement");
+      }
+    int n ;
+    printf("Enter a number :");
+    scanf("%d",&n);
+    int count=0;
+    while(n!=0){
+      int bit=n&1;
+      if(bit==1){
+          count++;
+      }
+      n=n>>1;
+    }
+     if(count==1){
+         printf("number is  2k\n");
+     }else{
+          printf("number is not  2k\n");
+    }
+    int i = 2;
+    do{
+        printf("Hello Adrsh\n");
+        i++;
+    }while(i<10);
+    
+    int n ;
+    printf("Enter a number : ");
+    scanf("%d",&n);
+    int sum = 0;
+    for(int i = 1; i<n-1;i++){
+        if(n%i==0){
+            sum = sum+i;
+        }
+    }
+    
+    printf("Sum is %d",sum);
+    
+    int n ;
+    printf("Enter a number :");
+    scanf("%d",&n);
+    int a =n;
+    int b = log10(a)+1;
+    int count = 0;
+    while(n!=0){
+        int digit = n%10;
+        count++;
+        n = n/10;
+    }
+    
+    printf("Count is %d",count);
+    
+    printf("\nCount is %d",b);
+    int n ,keys;
+    printf("Enter a number : ");
+    scanf("%d %d",&n,&keys);
+    int count =0;
+    while(n!=0){
+        int digit=n%10;
+        if(digit==keys){
+            count++;
+        }
+        n=n/10;
+    }
+    
+    printf("Frequency of %d in number is %d ",keys,count);
+    int n ;
+    printf("Enter a number :");
+    scanf("%d",&n);
+    printf("%d",n);
+    while(n>=10){
+        n=n/10;
+    }
+    printf("\n%d",n);
+    
+    int a,b;
+    
+    printf("Enter a nmuber :");
+    scanf("%d %d",&a,&b);
+    while(b!=0){
+        int temp;
+        temp=b;
+        b=a%b;
+        a= temp;
+    }
+    
+    printf("HCF is %d",a);
+    
+    int a,b;
+    printf("Enter a number :");
+    scanf("%d%d",&a,&b);
+    int min = a<b?a:b;
+    int hcf = 1;
+    for(int i = 1; i<=min; i++){
+        if(a%i==0&&b%i==0){
+            hcf=i;
+        }
+    }
+    printf("\n THe Hcf will be %d",hcf);
+    int lcm=(a*b)/hcf;
+    
+    printf("\n THe lcm will be %d",lcm);
+    
+    
+    int a = 17;
+    int c = log(a)/log(10)+1;
+    printf("%d",c);
+    
+    
+    
+    int a = strlen("Adarsh");
+    printf("A  is %d ",a);
+     printf("we are in main first function \n");
+    
+    
+     display();
+    
+     printf("we are in after  Display function \n");
+    
+    }
+  void display(){
+     printf("we are in Display function \n");
+    }
